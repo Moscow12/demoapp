@@ -118,9 +118,7 @@ class ProductResource extends Resource
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),
-                ImageColumn::make('image')
-                    ->disk('public')
-                    ->path('storage/product'),
+                ImageColumn::make('image'),
                 TextColumn::make('category.name')
                     ->sortable(),
                 TextColumn::make('brand.name')
