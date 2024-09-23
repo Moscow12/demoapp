@@ -160,7 +160,7 @@ class OrderResource extends Resource
                                 return SupportNumber::currency($total, 'TSH.');
                             }),
                             Hidden::make('grandtotal')
-                                ->default(0)
+                                ->default(0),
                     ]),
                     
                     Textarea::make('notes')
